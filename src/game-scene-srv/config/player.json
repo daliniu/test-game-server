@@ -1,0 +1,54 @@
+{
+  "baseInfo" : {
+    "base": {
+      "hp" : 100,
+      "atk" : 100,
+      "df" : 100
+    },
+    "baseAt" : 0
+  },
+  "equipInfo" : {
+    "equip" : {
+      "index1" : {
+        "id" : 1,
+        "value" : 100,
+        "attr" : [
+          {
+            "id" : 1,
+            "value1" : 100,
+            "value2" : 200
+          }
+        ]
+      }
+    },
+    "equipAt" : 0
+  },
+  "skillInfo" : {
+    "skill" : [
+      {
+        "id" : 1,
+        "value" : 100,
+        "attr" : [
+          {
+            "id" : 1,
+            "value1" : 100,
+            "value2" : 200
+          }
+        ]
+      }
+    ],
+    "skillAt" : 0
+  },
+  "bagInfo" : {
+    "bag" : [
+      {
+        "itemId" : 1001,
+        "value" : 100
+      }
+    ],
+    "bagAt" : 0
+  },
+  "seq" : 1,
+  "playerAt" : 0,
+  "tabName" : "player"
+}

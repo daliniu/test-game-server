@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package pb;
+
+service RoomManagerExtService {
+
+    // 加入某张地图
+    rpc Join (JoinRequest) returns (JoinResponse) {
+    }
+
+    rpc InGame (InGameRequest) returns (InGameResponse) {
+
+    }
+
+    // 房间列表
+    rpc MapList(MapListRequest) returns (MapListResponse){
+    }
+}
+
+
+message JoinRequest {
+    int64 mapId = 1;
+}
+
+message JoinResponse {
+    int64 mapId = 1;
+}
+
+message InGameRequest {
+
+}
+
+message InGameResponse {
+
+}
+
+message MapListRequest {
+
+}
+
+message MapListResponse {
+
+}
