@@ -2,28 +2,34 @@ syntax = "proto3";
 
 package pb;
 
+import "common.ext.proto";
+
 service RoomManagerExtService {
 
     // 加入某张地图
-    rpc Join (JoinRequest) returns (JoinResponse) {
+    rpc Move (MoveRequest) returns (MoveResponse) {
     }
 
     rpc InGame (InGameRequest) returns (InGameResponse) {
 
     }
 
-    // 房间列表
-    rpc MapList(MapListRequest) returns (MapListResponse){
-    }
+    // 地图列表
+    rpc MapList(MapListRequest) returns (MapListResponse){ }
 }
 
-
-message JoinRequest {
+message MoveRequest {
     int64 mapId = 1;
+    Point srcPosition = 2;
+    Point dstPosition = 3;
 }
 
-message JoinResponse {
+message MoveResponse {
     int64 mapId = 1;
+    Point srcPosition = 2;
+    Point dstPosition = 3;
+    int64 userId = 4;
+    string name = 5; 
 }
 
 message InGameRequest {
