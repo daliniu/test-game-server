@@ -7,3 +7,10 @@ message Point {
     int64 y = 2;
     int64 z = 3;
 }
+
+message Skill {
+
+}
+
+message Equip {
+}
